@@ -1,0 +1,37 @@
+.container-login {
+    display: flex;
+    align-items: center;
+}
+
+.login-form {
+    background-color: white;
+    border-radius: 6px;
+}
+
+.login-form hr {
+    width: 138px;
+    margin-right: 100%;
+    border: 2px solid #3d9043;
+}
+
+.login-image {
+    width: 184px;
+    border-radius: 4px;
+}
+
+.login-input {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.login-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.input-container {
+    border: 1px solid #cfd4da;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    padding-left: 12px;
+}
