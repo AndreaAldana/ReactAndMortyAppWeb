@@ -32,6 +32,7 @@ const Login = () => {
       'email' : email,
       'password' : password
     }
+    console.log(userCredentials)
 
     try {
       if (error.hasError) setError({hasError: false, message: ''});

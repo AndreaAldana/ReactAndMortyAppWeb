@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
-import {useHistory} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 
 const DetailEpisode = () => {
 
@@ -41,7 +41,7 @@ const DetailEpisode = () => {
                         <h5 className="card-title">{data.name}</h5>
                         <p className="card-text">Episode number: {data.episode}, Air date: {data.air_date}</p>
                         <p className="card-text">Gender: {data.name}</p>
-                        <a href="#" onClick={goBack} className="btn btn-success">Go back</a>
+                        <Link to="/" className="btn btn-success">Go back</Link>
                     </div>
                 </div>
             </div>

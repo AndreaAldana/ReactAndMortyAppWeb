@@ -27,9 +27,10 @@ export default class AuthService {
             const response = await Axios.post("https://reqres.in/api/login", userCredentials);
 
             this.setToken(response.data.token);
-
+            console.log(response)
             return response;
         } catch (error) {
+            console.log('AA')
             throw new Error("Server error");
         }
     }
@@ -54,5 +55,6 @@ export default class AuthService {
     private setToken(token: string) {
         localStorage.setItem('userToken', token);
         this.isLogged = true;
+        
     }
 }

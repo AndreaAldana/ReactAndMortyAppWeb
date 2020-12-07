@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
-import {useHistory} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 
 const DetailLocation = () => {
 
@@ -39,7 +39,7 @@ const DetailLocation = () => {
                         <h5 className="card-title">{data.name}</h5>
                         <p className="card-text">Dimension: {data.dimension}</p>
                         <p className="card-text">Typer: {data.type}</p>
-                        <a href="#" onClick={goBack} className="btn btn-success">Go back</a>
+                        <Link to="/" className="btn btn-success">Go back</Link>
                     </div>
                 </div>
             </div>
