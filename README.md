@@ -11,42 +11,20 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-To login: "email": "eve.holt@reqres.in",
+1. git clone https://github.com/AndreaAldana/ReactAndMortyAppWeb.git
+2. npm i
+3. npm start
+
+¡A disfrutar!
+
+Para Login: "email": "eve.holt@reqres.in",
     "password": "cityslicka"
 
-    To Register:  "email": "eve.holt@reqres.in",
+Para Register:  "email": "eve.holt@reqres.in",
     "password": "pistol"
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Resultado de una prueba técnica, posee AuthGuard(Protección de rutas al loguearse el usuario, no puede acceder al login ni al register), filtros de búsqueda por categorías, carruseles con datos de Rick And Morty, vista en detalle de sus datos.
 
-### `npm test`
+Se consumieron 2 API's, una de Rick And Morty y ReqRes, la cual es usada para simular un registro y un login sin un backend. Con esto último, también verifica y mantiene los datos del usuario, siendo un logueo consistente, en donde también, muestra su correo en la nav bar. Por supuesto, posee su log out el cual limpia el local storage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Al parecer la api solo está fallando si el correo no es el indicado más arriba, pero al momento de desarrollar esta aplicación, verificaba tanto el correo como la contraseña.
